@@ -21,7 +21,7 @@
             <div class="info">This faucet will send 15 tZNN and 150 tQSR to the address provided below.</div>
             <div class="input-label"></div>
             <input id="addressInput" type="text" placeholder="Enter NoM address" #avatarInput>
-            <div id="button" class="button" onclick="onRequestFundsSelected()">Request
+            <div id="button" class="button" onclick="onRequestFundsSelected(document.getElementById('addressInput').value)">Request
                 testnet funds</div>
             <div id="sentInfo" class="sent-info"></div>
         </div>

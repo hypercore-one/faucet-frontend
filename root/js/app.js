@@ -1,4 +1,4 @@
-const faucetUrls = ['https://node.zenon.fun:35999/faucet']
+const faucetUrls = []
 const addressLength = 40;
 let isValidAddress = false;
 
@@ -22,16 +22,14 @@ window.addEventListener('load', (_) => {
     });
 });
 
-function onRequestFundsSelected() {
+function onRequestFundsSelected(address) {
     if (!isValidAddress) {
         return
     }
 
     resetInput()
 
-    sendFaucetRequest(document.getElementById('addressInput').value)
-
-
+    sendFaucetRequest(address)
 }
 
 function resetInput() {
