@@ -1,0 +1,125 @@
+html * {
+    font-family: Verdana !important;
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #101010;
+    margin: 0;
+    padding: 0;
+}
+
+input {
+    background-color: #202020;
+    border-radius: 0.5rem;
+    height: 3.6rem;
+    border: 0;
+    font-size: 0.875rem;
+    text-indent: 1rem;
+    transition: 200ms ease-in-out;
+    font-family: verdana;
+    width: 34rem;
+
+
+    &:hover {
+        background-color: #272727;
+    }
+
+    &:focus {
+        background-color: #272727;
+        outline: none !important;
+        box-shadow: 0 0 0.5rem #272727;
+    }
+}
+
+a {
+    color: #ffffffb3;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    position: relative;
+}
+
+.input-label {
+    font-size: 0.75rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    color: #ffffffb3;
+    font-family: verdana;
+}
+
+.title {
+    font-size: 1.75rem;
+    text-align: center;
+    margin-bottom: 4rem;
+    font-weight: bold;
+}
+
+.faucet-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 1rem;
+    border: 1px solid #3f3f3f;
+    padding: 2.5rem;
+}
+
+.info {
+    font-size: 0.875rem;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.sent-info {
+    display: none;
+    font-size: 0.875rem;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.button {
+    padding: 1rem 1.125rem 1rem 1.125rem;
+    font-size: 1rem;
+    background-color: #dddddd;
+    border-radius: 0.5rem;
+    filter: drop-shadow(0 0 0.8em #00000040);
+    text-align: center;
+    width: 32rem;
+    transition: 200ms ease-in-out;
+    margin-top: 1.5rem;
+    color: black;
+    opacity: 0.4;
+    cursor: not-allowed;
+}
+
+.logo {
+    width: 5rem;
+    margin-bottom: 0.5rem;
+}
+
+.bottom-spacer {
+    margin-bottom: 8rem;
+}
+
+.footer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    bottom: 1rem;
+    left: 0;
+    right: 0;
+}
+
+.footer {
+    color: #ffffffb3;
+    font-size: 0.75rem;
+    text-align: center;
+}
